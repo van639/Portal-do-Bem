@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONGs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/Ongs.Css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">
+            <div id="logo"></div>
+        </a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../quemSomos/index.html">Quem Somos</a></li>
+          <li><a href="./pageONGS.html">ONGs</a></li>
+          <li><a href="#container-rodape">Contato</a></li>
+          <li><a href="#container-cards"><div id="btnDoar">Quero Doar</div></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="container-banner">
+        <img src="img/BANNER.png" alt="BANNER"/> 
+      </div> 
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <h2>CADASTRO</h2>
+        <div id="close-modal">X</div>
+        <p>Por favor, conclua o cadastro com suas informações e insira uma imagem do item que você deseja doar para validação. Sua colaboração é fundamental para garantir que possamos processar sua doação com eficiência. Agradecemos antecipadamente por sua contribuição e por fazer a diferença na vida daqueles que precisam!</p>
+        <div id="container-principal-modal">
+          <div id="container-esquerdo-label">
+            <div class="container-label">
+              <label for="nome">Nome:</label>
+              <input type=text id="nome" name="nome" placeholder="Insira seu nome" required><br>
+            </div>
+            <div class="container-label">
+              <label for="nome">Telefone:</label>
+              <input type=number id="numero" name="numero" placeholder="(__)____-____" required><br>
+            </div>
+            <div class="container-label">
+              <label for="nome">Email:</label>
+              <input type=text id="email" name="email" placeholder="Insira seu email" required><br>
+            </div>
+            <div class="container-label">
+              <label for="nome">Faz parte de algum partido politico?</label>
+              <input type=text id="partido" name="partido" placeholder="Insira seu partido politico" required><br>
+            </div>
+            <div class="container-label">
+              <label for="nome">Adcionar imagem do item para doação:</label>
+              <input type="file" id="partido" name="partido" placeholder="Insira seu partido politico" required><br>
+            </div>
+          </div>
+          <div id="container-direito-label">
+            <div id="container-cep" style="display: flex; flex-direction: row;">
+              <div class="container-label" style="width: 220px; margin-right: 5px;" >
+                <label for="nome">CEP:</label>
+                <input type=number id="cep" name="cep" placeholder="_____-___" required><br>
+              </div>
+              <div class="container-label" style="width: 220px;">
+                <label for="nome">Número:</label>
+                <input type=number id="numero" name="numero" placeholder="Número da casa" required><br>
+              </div>
+            </div>
+            <div class="container-label">
+              <label for="nome">Rua:</label>
+              <input type=text id="rua" name="rua" placeholder="Informe a rua" required><br>
+            </div>
+            <div class="container-label">
+              <label style="margin-bottom: 15px;">
+                Estado:
+            </label>
+            <select style="height: 30px; margin-top: -30px; margin-bottom: 10px;  ">
+              <option value="atl">Selecione o estado:</option>
+              <option value="bos">São Paulo</option>
+              <option value="bos">Rio de Janeiro</option>
+              <option value="bos">Minas Gerais</option>
+              <option value="bos">Rio Grande do Sul</option>
+              <option value="bos">Santa Catarina</option>
+            </select>
+            </div>
+            <div class="container-label">
+              <label for="nome">Qual a causa da sua ONG?</label>
+              <div id="container-radio">
+                <div id="esquerda-radio">
+                  <input id="a" type="radio" name="causa" value="causa" /> Saúde<br/>
+                  <input id="b"  type="radio" name="causa" value="causa"/> Cidadania<br/>
+                  <input id="c"  type="radio" name="causa" value="causa"/> Proteção Animal<br/>
+                </div>
+                <div id="direita-radio">
+                  <input id="d"  type="radio" name="causa" value="causa"/> Educação<br/>
+                  <input id="e"  type="radio" name="causa" value="causa"/> Cultura e Esportes<br/>
+                  <input id="f"  type="radio" name="causa" value="causa"/> Meio Ambiente<br/>
+                </div>
+              </div>
+            </div>
+            <button id="btn-cadastrar">CADASTRAR</button>
+          </div>
+        </div>
+      </div>
+      <div id="container-cards">
+        <!-- H1 TITULO -->
+        <p id="titulo">CONHEÇA AS <strong>ONGs</strong></p>
+        <div class="cards-ongs">
+          <!-- card -->
+          <div class="cards"> 
+            <img src="img/image 9.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          <!-- fim do card -->
+          <div class="cards"> 
+            <img src="img/amigos do bem.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          <div class="cards"> 
+            <img src="img/nossa casa.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          <div class="cards"> 
+            <img src="img/image 9.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          
+          <div class="cards"> 
+            <img src="img/amigos do bem.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          <div class="cards"> 
+            <img src="img/nossa casa.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          <div class="cards"> 
+            <img src="img/image 9.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          
+          <div class="cards"> 
+            <img src="img/amigos do bem.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div> 
+          <div class="cards"> 
+            <img src="img/nossa casa.png"/>
+            <button class="btn-saibamais">SAIBA MAIS</button>
+            <button class="btn-querodoar">QUERO DOAR</button>
+          </div>   
+        </div>
+    </div>
+    <div id="pai">
+      <p id="titulo">VEJA ALGUNS DEPOIMENTOS </p>
+      <div id="container-card-depoimentos">
+        <div class="card-depoimento">
+          <img src="img/casa Mc 01.png" alt="">
+        </div>
+        <div class="card-depoimento">
+          <img src="img/cardDepoimento.png" alt="">
+        </div>
+        <div class="card-depoimento">
+          <img src="img/casa Mc 03.png" alt="">
+        </div>
+        <div class="card-depoimento">
+          <img src="img/Hospital da Criança.png" alt="">
+        </div>
+      
+    </div>
+    <footer>
+      <div id="container-rodape">
+        <div id="container-redes-sociais">
+          <img id="img-logo" src="img/logo.png"/>
+          <img src="img/Instagram.png"/>
+          <img src="img/Facebook.png"/>
+          <img src="img/WhatsApp.png"/>
+        </div>
+        <a href="#container-cards"><div id="btnDoar">Quero Doar</div></a>
+      </div>
+      <div id="txt-direitos">
+        <p>©Portal do Bem - All rights reserved</p>
+      </div>
+    </footer>
+    </main>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
